@@ -20,7 +20,7 @@ interface IUser {
 const Users = () => {
     const userState = useSelector((state: RootState) => state.userRedcers.users);
     const dispatch = useDispatch<AppDispatch>();
-    console.log(userState, "user state data:::")
+  
 
     useEffect(() => {
        dispatch(getUserData())
